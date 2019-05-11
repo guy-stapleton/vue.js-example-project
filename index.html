@@ -6,8 +6,18 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-
-    <script src="js/index.js"></script>
+    <div id="app">
+        {{ message }}
+    </div>
+    <div id="app-2">
+        <span v-bind:title="message">
+            After you hover your mouse over the text for a few seconds, the date will display.
+        </span>
+    </div>
+    <div id="app-3">
+        <span v-if="seen">Now you see me...</span>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
